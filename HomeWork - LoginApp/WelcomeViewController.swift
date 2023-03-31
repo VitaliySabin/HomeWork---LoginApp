@@ -11,8 +11,11 @@ final class WelcomeViewController: UIViewController {
     
     @IBOutlet var welcomeTextField: UILabel!
     
+    var userName: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        welcomeTextField.text = "Welcome, " + userName + "!"
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -22,3 +25,4 @@ final class WelcomeViewController: UIViewController {
     }
     
 }
+

@@ -19,6 +19,11 @@ final class LoginViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+        welcomeVC.userName = loginTextField.text
+    }
+    
     @IBAction func remindLoginButton() {
         showAlert(with: "Ooops!", and: "Your login is \(login)")
     }
@@ -31,7 +36,11 @@ final class LoginViewController: UIViewController {
     }
     
     private func showAlert(with title: String, and message: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let alert = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert
+        )
         let okAction = UIAlertAction(title: "OK", style: .default)
         alert.addAction(okAction)
         present(alert, animated: true)
