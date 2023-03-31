@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="V38-IP-HYS">
-                                <rect key="frame" x="16" y="110" width="288" height="92"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="V38-IP-HYS">
+                                <rect key="frame" x="16" y="217" width="288" height="134.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your login" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9oC-kX-g22">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="34"/>
@@ -25,25 +25,25 @@
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8yI-JF-On0">
-                                        <rect key="frame" x="0.0" y="58" width="288" height="34"/>
+                                        <rect key="frame" x="0.0" y="50" width="288" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DI1-Oh-NqL">
+                                        <rect key="frame" x="0.0" y="100" width="288" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Log In" cornerStyle="large">
+                                            <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="logInButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="jqs-Lx-Aq8"/>
+                                            <segue destination="zob-Ym-dni" kind="presentation" modalPresentationStyle="fullScreen" id="Uiu-QB-JeY"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DI1-Oh-NqL">
-                                <rect key="frame" x="100.5" y="266.5" width="119" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Log In" cornerStyle="large">
-                                    <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="logInButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="jqs-Lx-Aq8"/>
-                                    <segue destination="zob-Ym-dni" kind="presentation" modalPresentationStyle="fullScreen" id="Uiu-QB-JeY"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyq-JR-WM0">
-                                <rect key="frame" x="16" y="210" width="121" height="28"/>
+                                <rect key="frame" x="16" y="367.5" width="121" height="28"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" titleAlignment="automatic">
                                     <attributedString key="attributedTitle">
@@ -61,7 +61,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cwi-lk-Ik0">
-                                <rect key="frame" x="157" y="210" width="147" height="28"/>
+                                <rect key="frame" x="157" y="367.5" width="147" height="28"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <attributedString key="attributedTitle">
@@ -82,18 +82,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemMintColor"/>
                         <constraints>
-                            <constraint firstItem="nyq-JR-WM0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0kD-OG-hJ8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V38-IP-HYS" secondAttribute="trailing" constant="16" id="8Mp-qd-SeZ"/>
-                            <constraint firstItem="V38-IP-HYS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="HYt-Eq-T8K"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cwi-lk-Ik0" secondAttribute="trailing" constant="16" id="Ib4-OW-DEi"/>
-                            <constraint firstItem="nyq-JR-WM0" firstAttribute="top" secondItem="V38-IP-HYS" secondAttribute="bottom" constant="8" id="TcA-5G-e3C"/>
-                            <constraint firstItem="DI1-Oh-NqL" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0616197" id="VaU-4L-J6s"/>
-                            <constraint firstItem="Cwi-lk-Ik0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nyq-JR-WM0" secondAttribute="trailing" constant="8" symbolic="YES" id="dt6-Xe-TkF"/>
-                            <constraint firstItem="Cwi-lk-Ik0" firstAttribute="top" secondItem="V38-IP-HYS" secondAttribute="bottom" constant="8" id="evM-Xr-vFX"/>
-                            <constraint firstItem="DI1-Oh-NqL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gbr-YX-Fog"/>
-                            <constraint firstItem="V38-IP-HYS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="loF-Jg-Gwu"/>
-                            <constraint firstItem="DI1-Oh-NqL" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.371875" id="pEN-fR-gNR"/>
-                            <constraint firstItem="DI1-Oh-NqL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xzg-xk-oEW"/>
+                            <constraint firstItem="nyq-JR-WM0" firstAttribute="top" secondItem="V38-IP-HYS" secondAttribute="bottom" constant="16" id="E9P-kZ-QoG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cwi-lk-Ik0" secondAttribute="trailing" constant="16" id="J1h-RM-lI0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V38-IP-HYS" secondAttribute="trailing" constant="16" id="Jll-1P-wpX"/>
+                            <constraint firstItem="Cwi-lk-Ik0" firstAttribute="top" secondItem="V38-IP-HYS" secondAttribute="bottom" constant="16" id="YSN-8D-n6G"/>
+                            <constraint firstItem="Cwi-lk-Ik0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nyq-JR-WM0" secondAttribute="trailing" constant="20" id="kVo-Ys-Q4U"/>
+                            <constraint firstItem="nyq-JR-WM0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qIH-kt-of8"/>
+                            <constraint firstItem="V38-IP-HYS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uG9-Zu-l0I"/>
+                            <constraint firstItem="V38-IP-HYS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vJw-wv-zWO"/>
                         </constraints>
                     </view>
                     <connections>
