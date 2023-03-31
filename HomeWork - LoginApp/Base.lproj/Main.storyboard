@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="V38-IP-HYS">
-                                <rect key="frame" x="16" y="217" width="288" height="134.5"/>
+                                <rect key="frame" x="16" y="168" width="288" height="134.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your login" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9oC-kX-g22">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="34"/>
@@ -43,36 +43,20 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyq-JR-WM0">
-                                <rect key="frame" x="16" y="367.5" width="121" height="28"/>
+                                <rect key="frame" x="16" y="318.5" width="94.5" height="28"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" titleAlignment="automatic">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Forgot your login?">
-                                            <attributes>
-                                                <font key="NSFont" size="12" name="Helvetica"/>
-                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <buttonConfiguration key="configuration" style="plain" title="Forgot login?" titleAlignment="automatic">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="remindLoginButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Re-Fh-RYe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cwi-lk-Ik0">
-                                <rect key="frame" x="157" y="367.5" width="147" height="28"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cwi-lk-Ik0">
+                                <rect key="frame" x="183.5" y="318.5" width="120.5" height="28"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Forgot your password?">
-                                            <attributes>
-                                                <font key="NSFont" size="12" name="Helvetica"/>
-                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <buttonConfiguration key="configuration" style="plain" title="Forgot password?">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="remindPasswordButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="JB8-jy-D23"/>
@@ -82,14 +66,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemMintColor"/>
                         <constraints>
-                            <constraint firstItem="nyq-JR-WM0" firstAttribute="top" secondItem="V38-IP-HYS" secondAttribute="bottom" constant="16" id="E9P-kZ-QoG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cwi-lk-Ik0" secondAttribute="trailing" constant="16" id="J1h-RM-lI0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V38-IP-HYS" secondAttribute="trailing" constant="16" id="Jll-1P-wpX"/>
-                            <constraint firstItem="Cwi-lk-Ik0" firstAttribute="top" secondItem="V38-IP-HYS" secondAttribute="bottom" constant="16" id="YSN-8D-n6G"/>
-                            <constraint firstItem="Cwi-lk-Ik0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nyq-JR-WM0" secondAttribute="trailing" constant="20" id="kVo-Ys-Q4U"/>
-                            <constraint firstItem="nyq-JR-WM0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qIH-kt-of8"/>
-                            <constraint firstItem="V38-IP-HYS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uG9-Zu-l0I"/>
-                            <constraint firstItem="V38-IP-HYS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vJw-wv-zWO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cwi-lk-Ik0" secondAttribute="trailing" constant="16" id="B4G-N1-cUA"/>
+                            <constraint firstItem="Cwi-lk-Ik0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nyq-JR-WM0" secondAttribute="trailing" constant="73" id="Zxt-rf-yY3"/>
+                            <constraint firstItem="nyq-JR-WM0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ctE-oj-oA1"/>
+                            <constraint firstItem="V38-IP-HYS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="eWd-Jp-wWr"/>
+                            <constraint firstItem="V38-IP-HYS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="168" id="gXx-S5-TrI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V38-IP-HYS" secondAttribute="trailing" constant="16" id="kXO-Zc-9qJ"/>
+                            <constraint firstItem="nyq-JR-WM0" firstAttribute="top" secondItem="V38-IP-HYS" secondAttribute="bottom" constant="16" id="knT-5O-gX3"/>
+                            <constraint firstItem="Cwi-lk-Ik0" firstAttribute="top" secondItem="V38-IP-HYS" secondAttribute="bottom" constant="16" id="slV-fy-Vzh"/>
                         </constraints>
                     </view>
                     <connections>
