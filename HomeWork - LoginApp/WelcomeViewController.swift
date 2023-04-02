@@ -18,11 +18,7 @@ final class WelcomeViewController: UIViewController {
         welcomeTextField.text = "Welcome, " + userName + "!"
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    }
-    
     @IBAction func logOutButtonPressed() {
+        performSegue(withIdentifier: "returnToLoginVC", sender: nil)
     }
-    
 }
-
